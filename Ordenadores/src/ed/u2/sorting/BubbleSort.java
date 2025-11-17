@@ -1,3 +1,5 @@
+package ed.u2.sorting;
+
 public final class BubbleSort {
 
     private static int swapCount = 0;
@@ -47,7 +49,7 @@ public final class BubbleSort {
             }
         }
         if (trace) {
-            System.out.println("-> Fin BubbleSort. Total Swaps: " + swapCount);
+            System.out.println("-> Fin ed.u2.sorting.BubbleSort. Total Swaps: " + swapCount);
         }
     }
 }

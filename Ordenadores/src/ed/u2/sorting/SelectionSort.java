@@ -1,3 +1,5 @@
+package ed.u2.sorting;
+
 import java.util.Arrays;
 
 public final class SelectionSort {
@@ -24,7 +26,7 @@ public final class SelectionSort {
         }
 
         if (trace) {
-            System.out.println("  -> Inicio SelectionSort. Arreglo original: " + Arrays.toString(a));
+            System.out.println("  -> Inicio ed.u2.sorting.SelectionSort. Arreglo original: " + Arrays.toString(a));
         }
 
         int n = a.length;
@@ -66,7 +68,7 @@ public final class SelectionSort {
         }
 
         if (trace) {
-            System.out.println("\n-> Fin SelectionSort. Total Swaps: " + swapCount);
+            System.out.println("\n-> Fin ed.u2.sorting.SelectionSort. Total Swaps: " + swapCount);
         }
     }
 }

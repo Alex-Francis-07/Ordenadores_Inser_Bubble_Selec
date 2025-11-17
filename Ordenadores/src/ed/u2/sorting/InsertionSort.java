@@ -1,3 +1,5 @@
+package ed.u2.sorting;
+
 public final class InsertionSort {
     private static int movementCount = 0;
 
@@ -34,7 +36,7 @@ public final class InsertionSort {
             }
         }
         if (trace) {
-            System.out.println("-> Fin InsertionSort. Total Movimientos: " + movementCount);
+            System.out.println("-> Fin ed.u2.sorting.InsertionSort. Total Movimientos: " + movementCount);
         }
     }
 
