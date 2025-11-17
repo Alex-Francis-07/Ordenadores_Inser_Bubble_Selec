@@ -1,7 +1,12 @@
 public final class BubbleSort {
 
+    private static int swapCount = 0;
     public static void sort(int[] a) {
         sort(a, false);
+    }
+
+    public static int getSwapCount() {
+        return swapCount;
     }
 
     public static void sort(int[] a, boolean trace) {
@@ -40,6 +45,9 @@ public final class BubbleSort {
                 }
                 break; // Salimos del bucle externo
             }
+        }
+        if (trace) {
+            System.out.println("-> Fin BubbleSort. Total Swaps: " + swapCount);
         }
     }
 }

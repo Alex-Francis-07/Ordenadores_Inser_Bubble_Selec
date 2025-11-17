@@ -1,4 +1,5 @@
 public final class InsertionSort {
+    private static int movementCount = 0;
 
     public static void sort(int[] a) {
         sort(a, false);
@@ -32,5 +33,16 @@ public final class InsertionSort {
                 SortingUtils.printArray(a);
             }
         }
+        if (trace) {
+            System.out.println("-> Fin InsertionSort. Total Movimientos: " + movementCount);
+        }
+    }
+
+    public static int getMovementCount() {
+        return movementCount;
+    }
+
+    public static void setMovementCount(int movementCount) {
+        InsertionSort.movementCount = movementCount;
     }
 }
