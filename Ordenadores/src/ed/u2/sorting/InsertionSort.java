@@ -36,7 +36,7 @@ public final class InsertionSort {
             }
         }
         if (trace) {
-            System.out.println("-> Fin ed.u2.sorting.InsertionSort. Total Movimientos: " + movementCount);
+            System.out.println("-> Fin InsertionSort. Total Movimientos: " + movementCount);
         }
     }
 
