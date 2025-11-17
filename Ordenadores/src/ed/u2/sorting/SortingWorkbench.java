@@ -8,7 +8,6 @@ public class SortingWorkbench {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("===PRUEBAS===");
 
         while (true) {
             mostrarMenu();
@@ -19,16 +18,16 @@ public class SortingWorkbench {
                     ingresarNumeros();
                     break;
                 case "2":
-                    ejecutarAlgoritmo("ed.u2.sorting.SelectionSort");
+                    ejecutarAlgoritmo("SelectionSort");
                     break;
                 case "3":
-                    ejecutarAlgoritmo("ed.u2.sorting.InsertionSort");
+                    ejecutarAlgoritmo("InsertionSort");
                     break;
                 case "4":
-                    ejecutarAlgoritmo("ed.u2.sorting.BubbleSort");
+                    ejecutarAlgoritmo("BubbleSort");
                     break;
                 case "5":
-                    System.out.println("Saliendo del programa. ¡Adiós!");
+                    System.out.println("Saliendo");
                     scanner.close();
                     return;
                 default:
@@ -45,9 +44,9 @@ public class SortingWorkbench {
         System.out.println("-------------------------------");
         System.out.println("Arreglo actual en memoria: " + Arrays.toString(currentArray));
         System.out.println("1. Datos a insertar");
-        System.out.println("2. Ejecutar ed.u2.sorting.SelectionSort");
-        System.out.println("3. Ejecutar ed.u2.sorting.InsertionSort");
-        System.out.println("4. Ejecutar ed.u2.sorting.BubbleSort");
+        System.out.println("2. Ejecutar SelectionSort");
+        System.out.println("3. Ejecutar InsertionSort");
+        System.out.println("4. Ejecutar BubbleSort");
         System.out.println("5. Salir");
         System.out.println("-------------------------------");
         System.out.print("Elige una opción: ");
@@ -106,13 +105,13 @@ public class SortingWorkbench {
 
         SortingUtils.printArray(copy);
         switch (nombreAlgoritmo) {
-            case "ed.u2.sorting.SelectionSort":
+            case "SelectionSort":
                 SelectionSort.sort(copy, true);
                 break;
-            case "ed.u2.sorting.InsertionSort":
+            case "InsertionSort":
                 InsertionSort.sort(copy, true);
                 break;
-            case "ed.u2.sorting.BubbleSort":
+            case "BubbleSort":
                 BubbleSort.sort(copy, true);
                 break;
         }

@@ -49,7 +49,7 @@ public final class BubbleSort {
             }
         }
         if (trace) {
-            System.out.println("-> Fin ed.u2.sorting.BubbleSort. Total Swaps: " + swapCount);
+            System.out.println("-> Fin BubbleSort. Total Swaps: " + swapCount);
         }
     }
 }
