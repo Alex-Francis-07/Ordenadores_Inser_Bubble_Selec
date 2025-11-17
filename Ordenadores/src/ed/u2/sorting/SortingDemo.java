@@ -1,3 +1,5 @@
+package ed.u2.sorting;
+
 import java.util.Arrays;
 
 public class SortingDemo {
@@ -28,8 +30,8 @@ public class SortingDemo {
         SortingUtils.printArray(originalArray);
         System.out.println("-------------------------------------------------------");
 
-        // --- InsertionSort ---
-        System.out.println("-----------------InsertionSort----------------------");
+        // --- ed.u2.sorting.InsertionSort ---
+        System.out.println("-----------------ed.u2.sorting.InsertionSort----------------------");
         int[] copy1 = Arrays.copyOf(originalArray, originalArray.length);
         InsertionSort.sort(copy1, true); // con traza
         System.out.println("-> Resultado: " + InsertionSort.getMovementCount() + " movimientos.");
@@ -37,8 +39,8 @@ public class SortingDemo {
         SortingUtils.printArray(copy1);
 
 
-        // --- SelectionSort ---
-        System.out.println("-----------------SelectionSort-----------------");
+        // --- ed.u2.sorting.SelectionSort ---
+        System.out.println("-----------------ed.u2.sorting.SelectionSort-----------------");
         int[] copy2 = Arrays.copyOf(originalArray, originalArray.length);
         SelectionSort.sort(copy2, true); // con traza
         System.out.println("-> Resultado: " + SelectionSort.getSwapCount() + " swaps.");
@@ -46,8 +48,8 @@ public class SortingDemo {
         SortingUtils.printArray(copy2);
 
 
-        // --- BubbleSort ---
-        System.out.println("----------------Ejecutando BubbleSort----------------");
+        // --- ed.u2.sorting.BubbleSort ---
+        System.out.println("----------------Ejecutando ed.u2.sorting.BubbleSort----------------");
         int[] copy3 = Arrays.copyOf(originalArray, originalArray.length);
         BubbleSort.sort(copy3, true); // con traza
         System.out.println("-> Resultado: " + BubbleSort.getSwapCount() + " swaps.");
